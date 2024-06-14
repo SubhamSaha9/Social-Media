@@ -66,7 +66,7 @@ const Auth = () => {
 
         <div>
           <input
-            type="text"
+            type="email"
             className="infoInput"
             name="username"
             placeholder="Usernames"

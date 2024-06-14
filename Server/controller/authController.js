@@ -24,7 +24,8 @@ export const registerUser = async (req, res) => {
         }, process.env.SECRET_KEY, { expiresIn: '5h' })
         res.status(200).json({ newUser, token });
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.log(error);
+        res.status(500).json(error);
     }
 }
 
@@ -48,6 +49,7 @@ export const loginUser = async (req, res) => {
             res.status(400).json("User does not exist!");
         }
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.log(error);
+        res.status(500).json(error);
     }
 }
