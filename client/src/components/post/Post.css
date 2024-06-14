@@ -1,0 +1,102 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.postOwner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.onner-details{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.pop-menu{
+    /* position: relative; */
+}
+
+.popover{
+    position: absolute;
+    background-color: rgba(243, 241, 241, 0.962);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.449);
+    height: 4.5rem;
+    width: 8rem;
+    top: 3.4rem;
+    right: 0.6rem;
+    border-radius: 0.6rem;
+    align-content: center;
+    /* overflow: hidden; */
+    border: 1px solid #d3cfcf;
+}
+.popover::before{
+    border: solid 10px transparent;
+    content: '';
+    position: absolute;
+    border-bottom-color: #cfcbcb;
+    top: -20px;
+    right: 8px;
+}
+.popover::after{
+    border: solid 10px transparent;
+    content: '';
+    position: absolute;
+    border-bottom-color: rgba(243, 241, 241, 0.962);
+    top: -19px;
+    right: 8px;
+}
+.popover>div{
+    text-align: center;
+    height: 50%;
+    align-content: center;
+}
+.popover>div:nth-child(1){
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+.popover>div:nth-child(2){
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+.popover>div:hover{
+    cursor: pointer;
+    background-color: #80808038;
+}
+
+.onner-details div{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.onner-details>img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.Post>img {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.postReact {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.data-counts>span{
+    color: var(--gray);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
