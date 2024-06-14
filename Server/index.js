@@ -47,7 +47,7 @@ const server = app.listen(port, () => {
 
 const io = new Server(server, {
     cors: {
-        origin: "https://social-media-subhamio-subham-sahas-projects-26624cb8.vercel.app/",
+        origin: "https://social-media-subhamio-subham-sahas-projects-26624cb8.vercel.app",
     },
 });
 
