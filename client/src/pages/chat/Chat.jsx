@@ -34,7 +34,7 @@ const Chat = () => {
     }, [user]);
 
     useEffect(()=>{
-        socket.current = io("http://localhost:5000");
+        socket.current = io("https://social-media-yf7p.onrender.com");
         socket.current.emit("new-user-add", user._id);
         socket.current.on("get-users", (users) => {
             setOnlineUsers(users);
